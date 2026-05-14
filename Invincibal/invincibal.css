@@ -1,0 +1,673 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.hero 
+{
+  height: 600px;
+  background-image: linear-gradient(360deg,black,rgba(480, 34, 34, 0)), url('Photos/2.jpg');
+  position: relative;
+  color: white;
+}
+
+/* overlay for readability */
+.hero::before 
+{
+  content: "";
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+}
+
+/* navbar */
+.navbar 
+{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo1
+{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo1 img
+{
+  width: 20%;
+  /* height: 150px; */
+  margin: 5px 200px 500px 150px;
+  /* background-color: tomato; */
+}
+
+.menu 
+{
+  font-size: 50px;
+  margin: 0px 200px;
+}
+
+/* center content */
+.hero-content 
+{
+  position: absolute;
+  top: 40%;
+  left: 110px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-content p 
+{
+  font-size: 20px;
+  margin: 0px 80px;
+}
+
+.hero-content h1 
+{
+  font-size: 80px;
+  margin: 10px 80px;
+}
+
+.hero-content button 
+{
+  padding: 12px 24px;
+  border: none;
+  margin: 0px 80px;
+  border-radius: 10px;
+  background: white;
+  color: black;
+}
+
+.hero-content :hover button
+{
+  background-color: grey;
+  color: white;
+}
+
+.tagline
+{
+  position: relative;
+  top: 72%;
+  left: 13%;
+  height: 100px;
+  width: 60%;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.data
+{
+  position: relative;
+  top: 60%;
+  left: 13%;
+  height: 100px;
+  width: 60%;
+  display: flex;
+  /* background-color: #ff7a00; */
+}
+
+.tag
+{
+  height: 20px;
+  width: 100%;
+  /* background-color: #ff7a00; */
+}
+
+.tag p
+{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.new
+{
+  
+  width: 24%;
+  height: 80px;
+  /* background-color: green; */
+}
+
+.pic
+{
+  height: 80px;
+  width: 30%;
+  /* background-color: blueviolet; */
+  display: flex;
+}
+
+.pic img
+{
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.pic h2
+{
+  position: absolute;
+  top: 20px;
+  
+}
+
+.pic p
+{
+  position: absolute;
+  top: 50px;
+  font-size: 20px;
+}
+
+.text
+{
+height: 80px;
+width: 45%;
+/* background-color: blue; */
+}
+
+.main
+{
+  padding: 40px;
+}
+
+.main h6
+{
+  color: orangered;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.main p
+{
+  margin-left: 150px;
+}
+
+.container
+{
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  /* background-color: burlywood; */
+}
+
+.cards
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.card
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.card img
+{
+  height: 350px;
+  border-radius: 10px;
+}
+
+.boxes
+{
+  width: 100%;
+  height: 400px;
+  color: orangered;
+  background-color: whitesmoke;
+} 
+
+.boxes p
+{
+  top: 10px;
+  font-size: 30px;
+  margin-top: 160px;
+  margin-left: 180px;
+}
+
+.box
+{
+  width: 76%;
+  height: 270px;
+  margin: auto;
+  /* background-color: beige; */
+}
+
+.Events
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.boxs 
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.boxes img
+{
+  height: 210px;
+  border-radius: 10px;
+}
+
+.boxes h6
+{
+  color: black;
+  font-size: 13px;
+  margin-right: 90px;
+}
+
+.item
+{
+  width: 100%;
+  color: orangered;
+}
+
+.item p
+{
+  font-size: 30px;
+  /* margin-top: 160px; */
+  margin-left: 180px;
+}
+
+.item-box
+{
+  width: 76%;
+  height: 300px;
+  margin: auto;
+}
+
+.item-boxes
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.item-boxs
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.item-boxs img
+{
+  height: 220px;
+  border-radius: 10px;
+}
+
+.item-boxs h6
+{
+  color: black;
+  font-size: 15px;
+}
+
+.Weekend
+{
+  width: 100%;
+  color: orangered;
+}
+
+.Weekend p
+{
+  font-size: 30px;
+  /* margin-top: 160px; */
+  margin-left: 180px;
+}
+
+.Weekend-box
+{
+  width: 76%;
+  height: 300px;
+  margin: auto;
+}
+
+.Weekend-boxes
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.Weekend-boxs 
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.Weekend-boxs img
+{
+  height: 220px;
+  border-radius: 10px;
+}
+
+.Weekend-boxs h6
+{
+  color: black;
+  font-size: 15px;
+}
+
+.Special
+{
+  width: 100%;
+  color: orangered;
+}
+
+.Special p
+{
+  font-size: 30px;
+  /* margin-top: 160px; */
+  margin-left: 180px;
+}
+
+.special-boxes
+{
+  width: 76%;
+  height: 300px;
+  margin: auto;
+}
+
+.special-boxs
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.special-box
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.special-box img
+{
+  height: 220px;
+  border-radius: 10px;
+}
+
+.special-box h6
+{
+  color: black;
+  font-size: 15px;
+}
+
+.Experience
+{
+  padding: 40px;
+  background-color: whitesmoke;
+}
+
+.Experience h6
+{
+  color: orangered;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.Experience p
+{
+  margin-left: 150px;
+}
+
+.videos-boxes
+{
+  width: 80%;
+  height: 300px;
+  margin: auto;
+}
+
+.videos-boxs
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.videosl-box
+{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.videos-box iframe
+{
+  width: 400px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.reviews
+{
+  width: 100%;
+  height: 840px;
+  background-color: whitesmoke;
+}
+.reviews h2
+{
+  color: orangered;
+  /* position: relative; */
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 190px;
+}
+
+.reviews p
+{
+  position: absolute;
+  font-size: 16px;
+  margin-left: 190px;
+  text-align: justify;
+}
+
+.pi img
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* margin-left: 160px; */
+  /* border-radius: 30%; */
+}
+
+.stories
+{
+  top: 180px;
+  width: 100%;
+}
+
+.stories h6
+{
+  color: orangered;
+  font-size: 30px;
+  margin-left: 180px;
+}
+
+.stories p
+{
+  font-size: 18px;
+  /* margin-top: 160px; */
+  margin-left: 180px;
+}
+
+.stories-boxes
+{
+  width: 76%;
+  height: 300px;
+  margin: auto;
+}
+
+.stories-boxs
+{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.stories-box
+{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stories-box img
+{
+  height: 220px;
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+.stories-box h5
+{
+  color: black;
+  font-size: 15px;
+}
+
+.footer
+{
+  background: #121212;
+  color: #fff;
+  padding: 60px 150px 20px;
+}
+
+.footer-container
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-box
+{
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo
+{
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.footer-text
+{
+  color: #bdbdbd;
+  line-height: 1.8;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+
+.social-icons
+{
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a
+{
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-icons i
+{
+  font-size: 25px;
+}
+
+.footer-box h3
+{
+  color: #ff6b1a;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+.footer-links
+{
+  list-style: none;
+  margin-left: 20px;
+}
+
+.footer-links li
+{
+  margin-bottom: 12px;
+}
+
+.footer-links a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover
+{
+  color: #ff6b1a;
+}
+
+.footer-box h4
+{
+  margin-bottom: 15px;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.contact-text
+{
+  color: #bdbdbd;
+  /* line-height: 1.7; */
+  margin-bottom: 20px;
+}
+
+.footer-box p
+{
+  margin-bottom: 12px;
+  color: #d0d0d0;
+  margin-left: 20px ;
+}
+
+.office-link
+{
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff6b1a;
+  /* text-decoration: none; */
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.footer-bottom
+{
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
